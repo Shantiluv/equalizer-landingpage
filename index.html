@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HarmonyEQ</title>
-  
+  <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
+  <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;600;700&display=swap" rel="stylesheet" />
   <link rel="favicon" type="image/png" href="images/favicon.ico" />
@@ -15,19 +15,19 @@
   <style>
     body {
       font-family: "IBM Plex Sans", sans-serif;
-    background: url('./images/bkgrd.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+      background: url('./images/bkgrd.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
     }
 
     .header-title {
       font-size: 3rem;
       font-weight: bold;
     }
-    
+
     .header-subtitle {
       font-size: 4.5rem;
       font-weight: 900;
@@ -37,23 +37,23 @@
       margin-top: 35px;
       margin-bottom: 50px;
     }
+
     .main-description {
-      font-size: 1.5rem; 
+      font-size: 1.5rem;
     }
 
     .pricing-card {
       color: white;
       padding: 20px;
       margin: 20px 0;
-      padding: 48px 37px 0px 37px;
       width: 100%;
-      height: 546px;
+      height: auto;
       background: #fa7453;
       border-radius: 12px;
       z-index: 10;
       margin-top: 150px !important;
     }
-    
+
     .pricing-card h3 {
       font-weight: bold;
       margin-bottom: 15px;
@@ -73,21 +73,21 @@
       font-size: 1.1rem;
       font-weight: normal;
     }
-    
+
     .pricing-card .btn.android {
-      background-color: #fff; 
+      background-color: #fff;
       color: #000;
     }
 
     .pricing-card .btn.ios {
-      background-color: #000; 
+      background-color: #000;
       color: #fff;
     }
 
     .pricing-card .btn {
       margin: 5px 0;
-      border-radius: 12px; 
-      height: 50px; 
+      border-radius: 12px;
+      height: 50px;
       padding-top: 12px;
       border: none;
     }
@@ -106,7 +106,6 @@
     .black-back {
       width: 100%;
       height: 600px;
-      /* right: 20; */
       background: #191826;
       border-radius: 12px;
       position: absolute;
@@ -116,12 +115,70 @@
       width: 300px;
       margin-top: -80px;
     }
+
+    
+    @media (max-width: 992px) {
+      .header-title {
+        font-size: 2.5rem;
+      }
+
+      .header-subtitle {
+        font-size: 3rem;
+      }
+
+      .main-description {
+        font-size: 1.2rem;
+      }
+
+      .icon-app {
+        width: 250px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-title {
+        font-size: 2rem;
+      }
+
+      .header-subtitle {
+        font-size: 2.5rem;
+      }
+
+      .main-description {
+        font-size: 1rem;
+      }
+
+      .icon-app {
+        width: 200px;
+      }
+
+      .pricing-card {
+        margin-top: 50px !important;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .header-title {
+        font-size: 1.5rem;
+      }
+
+      .header-subtitle {
+        font-size: 2rem;
+      }
+
+      .main-description {
+        font-size: 0.9rem;
+      }
+
+      .icon-app {
+        width: 150px;
+      }
+    }
   </style>
 </head>
 
 <body>
-
-
+ 
   <header class="container text-left my-5">
     <h1 class="header-title">HarmonyEQ</h1>
     <p class="header-subtitle">We make your music <br> sound extraordinary</p>
@@ -142,15 +199,14 @@
           <h3>Premium EQ</h3>
           <p>Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take your listening experience to a whole new level and access all our incredible features!</p>
           <div class="price">$10 <small>/ month</small></div>
-          <a href="#" class="btn btn-block btn-primary ios" style=""><i class="fab fa-apple"></i> iOS Download</a>
+          <a href="#" class="btn btn-block btn-primary ios"><i class="fab fa-apple"></i> iOS Download</a>
           <a href="#" class="btn btn-block btn-primary android"><i class="fab fa-android"></i> Android Download</a>
         </div>
       </div>
-      
     </div>
   </section>
 
-  
+ 
   <footer class="text-center py-4 mt-5">
     <div class="container">
       <div class="row">
@@ -172,7 +228,7 @@
     </div>
   </footer>
 
- 
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
