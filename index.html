@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HarmonyEQ</title>
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;600;700&display=swap" rel="stylesheet" />
+  <link rel="favicon" type="image/png" href="images/favicon.ico" />
+
+  <style>
+    body {
+      font-family: "IBM Plex Sans", sans-serif;
+    background: url('./images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    }
+
+    .header-title {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    
+    .header-subtitle {
+      font-size: 4.5rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 20px;
+      max-width: 1000px;
+      margin-top: 35px;
+      margin-bottom: 50px;
+    }
+    .main-description {
+      font-size: 1.5rem; 
+    }
+
+    .pricing-card {
+      color: white;
+      padding: 20px;
+      margin: 20px 0;
+      padding: 48px 37px 0px 37px;
+      width: 100%;
+      height: 546px;
+      background: #fa7453;
+      border-radius: 12px;
+      z-index: 10;
+      margin-top: 150px !important;
+    }
+    
+    .pricing-card h3 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .pricing-card p {
+      margin-bottom: 10px;
+    }
+
+    .pricing-card .price {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .pricing-card .price small {
+      font-size: 1.1rem;
+      font-weight: normal;
+    }
+    
+    .pricing-card .btn.android {
+      background-color: #fff; 
+      color: #000;
+    }
+
+    .pricing-card .btn.ios {
+      background-color: #000; 
+      color: #fff;
+    }
+
+    .pricing-card .btn {
+      margin: 5px 0;
+      border-radius: 12px; 
+      height: 50px; 
+      padding-top: 12px;
+      border: none;
+    }
+
+    .footer-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #000 !important;
+    }
+
+    .black-back {
+      width: 100%;
+      height: 600px;
+      /* right: 20; */
+      background: #191826;
+      border-radius: 12px;
+      position: absolute;
+    }
+
+    .icon-app {
+      width: 300px;
+      margin-top: -80px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header class="container text-left my-5">
+    <h1 class="header-title">HarmonyEQ</h1>
+    <p class="header-subtitle">We make your music <br> sound extraordinary</p>
+    <p class="main-description">Experience unparalleled audio quality and enjoy your music like never before with HarmonyEQ, crafted for both Android and iOS. Masterfully adjust your sound with a professional-grade parametric EQ and volume mixer.
+      Fine-tune bass, mids, treble, gain, reverb, and beyond!</p>
+  </header>
+
+  
+  <section class="container relative" style="margin-top: 200px;">
+    <div class="container black-back"></div>
+    <div class="row" style="margin-left: 70px; margin-right: 70px;">
+      <div class="col-md-4">
+        <img src="images/illustration-app.png" alt="" class="icon-app" aria-hidden="true">
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-5">
+        <div class="pricing-card">
+          <h3>Premium EQ</h3>
+          <p>Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take your listening experience to a whole new level and access all our incredible features!</p>
+          <div class="price">$10 <small>/ month</small></div>
+          <a href="#" class="btn btn-block btn-primary ios" style=""><i class="fab fa-apple"></i> iOS Download</a>
+          <a href="#" class="btn btn-block btn-primary android"><i class="fab fa-android"></i> Android Download</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  
+  <footer class="text-center py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="footer-title">HarmonyHQ</h5>
+        </div>
+        <div class="col-md-4">
+          <p>All rights reserved © HarmonyEQ 2024</p>
+          <p>Have any problems? Contact us via social media or email us at harmonyeq@example.com</p>
+        </div>
+        <div class="col-md-4">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
